@@ -1,0 +1,90 @@
+.section-nav{
+    z-index: 100;
+}
+.section-2{
+    margin-top:50px;
+}
+.cards{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.card{ 
+    width:300px;
+    height: 200px;
+    border-radius:15px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    box-shadow:1px 1px 4px;
+}
+.card-image{
+    padding:10px;
+}
+.card-image>img{
+    border-radius:15px; 
+}
+.card>p{
+      padding-inline: 20px !important; 
+      text-align: justify;
+}
+.section-4-card-image{
+    border-radius:15px;
+}
+@media  screen and (max-width:768px) {
+    .card{ 
+        width:100%;
+        margin-top:20px;
+    }
+    .card-bootstrap{
+        width: 100% !important;
+        margin-top:20px;
+    }
+}
+@media screen and (max-width:520px){
+    .sub-footer{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    .sub-footer>p{
+        margin-right:50px;
+    }
+
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+  }
+  
+  /* Create four equal columns that sits next to each other */
+  .column {
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+  }
+  
+  .column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+    
+  }
+  
+  /* Responsive layout - makes a two column-layout instead of four columns */
+  @media screen and (max-width: 800px) {
+    .column {
+      flex: 50%;
+      max-width: 50%;
+    }
+  }
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column {
+      flex: 100%;
+      max-width: 100%;
+    }
+  }
